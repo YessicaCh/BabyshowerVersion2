@@ -23,10 +23,17 @@ list.forEach(function(element) {
         console.log('eredado onclick')
     };
 
+    const img = document.createElement("img");
+    img.setAttribute( "src", "img/esferas.png" );
+    img.setAttribute( "class", "w-50" );
+    
+    /*<img src="img/gokubebe.png" class="w-75 mx-auto d-block" alt="...">*/
+
     const itemContent = document.createElement("a");
     //itemContent.setAttribute( "href", "javascript:open()" );
     itemContent.innerHTML = element
 
+    itemList.appendChild(img)
     itemList.appendChild(itemContent)
     console.log(itemList)
     document.getElementById("listContent").appendChild(itemList);
