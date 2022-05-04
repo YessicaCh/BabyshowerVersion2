@@ -13,7 +13,7 @@ function funtionclose(){
 
 list.forEach(function(element) {
     const itemList =  document.createElement('div')
-    itemList.setAttribute( "class", "box" );
+    itemList.setAttribute( "class", "card w-25 text-center box" ); //box
     itemList.setAttribute( "id", element );
     itemList.onclick = function () {
         open()
